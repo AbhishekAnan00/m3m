@@ -209,7 +209,42 @@
     .modal-right input,.modal-right textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);color:var(--white)}
     .modal-right .submit{padding:10px;border-radius:10px}
     .toast{position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,#1f6f36,#28a745);color:#fff;padding:10px 14px;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.4);display:none;z-index:1600}
+
+
+
+
+
+
+     /* ===== Extra Mobile Responsiveness ===== */
+@media (max-width:768px){
+  .title-lg{font-size:28px}
+  .subtitle{font-size:16px}
+  section{padding:40px 0}
+  .hero-inner{gap:14px}
+}
+
+@media (max-width:600px){
+  .topbar{height:auto;flex-wrap:wrap;padding:10px}
+  .brand img{height:28px}
+  .call-btn{padding:6px 10px;font-size:14px}
+  .nav a{font-size:14px}
+  .tiny-card{grid-template-columns:80px 1fr}
+  .tiny-card .thumb{width:80px;height:60px}
+}
+
+@media (max-width:480px){
+  .title-lg{font-size:24px}
+  .subtitle{font-size:14px}
+  .cta-row{flex-direction:column}
+  .hero-controls{display:none}
+  .mini{font-size:11px;padding:4px 8px}
+  .tri-btn, .btn-outline{font-size:14px;padding:8px 14px}
+  .modal-inner{max-height:90vh;overflow-y:auto}
+  .modal-left img{max-height:300px;object-fit:contain}
+}
   </style>
+ 
+
 </head>
 <body>
   <!-- FESTIVE SPARKLES -->
@@ -528,7 +563,7 @@ const MODALS = [
   {
     id: 'onload2',
     title: 'Independence Offer',
-    img: '../images/strips/M3M-INDEPENDET-POPUP.jpg',
+    img: './images/strips/M3M-INDEPENDET-POPUP.jpg',
     btnId: 'SubmitQuery7',
     formFields: [
       { id: 'qSenderName7', type:'text', placeholder:'Enter Name' },
@@ -540,7 +575,7 @@ const MODALS = [
   {
     id: 'exampleModal1',
     title: 'Enquire Now',
-    img: '../images/strips/M3M-INDEPENDET-dsk.jpg',
+    img: './images/strips/M3M-INDEPENDET-dsk.jpg',
     btnId: 'SubmitQuery1',
     formFields: [
       { id: 'qSenderName1', type:'text', placeholder:'Enter Name' },
@@ -552,7 +587,7 @@ const MODALS = [
   {
     id: 'exampleModal2',
     title: 'View Floor Plan',
-    img: '../images/strips/M3M-The-Line-Pop-Up.jpg',
+    img: './images/strips/M3M-The-Line-Pop-Up.jpg',
     btnId: 'SubmitQuery2_modal',
     formFields: [
       { id: 'qSenderName_fp', type:'text', placeholder:'Enter Name' },
